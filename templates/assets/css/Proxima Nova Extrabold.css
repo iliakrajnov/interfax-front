@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Proxima Nova Extrabold';
+	src: url(../../assets/fonts/ProximaNova-Extrabld.woff2) format('woff2'),
+	url(../../assets/fonts/ProximaNova-Extrabld.woff) format('woff'),
+	url(../../assets/fonts/ProximaNova-Extrabld.ttf) format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}

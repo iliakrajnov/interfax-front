@@ -1,0 +1,36 @@
+.news {
+  animation: move_news 500ms;
+  animation-play-state: paused;
+}
+
+@keyframes move_news {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes tags_animation {
+  0% {
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+@keyframes info-card {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.col-auto {
+  animation: tags_animation 4s;
+  animation-fill-mode: forwards;
+}
+

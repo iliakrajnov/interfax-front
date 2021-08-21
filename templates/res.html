@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>interfax</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Proxima%20Nova.css">
+    <link rel="stylesheet" href="assets/css/Proxima%20Nova%20Bold.css">
+    <link rel="stylesheet" href="assets/css/Proxima%20Nova%20Extrabold.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+</head>
+
+<body onload="news_update()" style="overflow: hidden;">
+    <div class="container">
+        <div class="card shadow" id="info-card" style="border-top-left-radius: 0px;border-top-right-radius: 0px;">
+            <div class="card-body">
+                <h6 id="info-text" style="font-family: 'Proxima Nova';">Проверьте загруженные новости</h6>
+                <div class="row" id="confirm">
+                    <div class="col"><button class="btn btn-primary" type="button" style="background: rgb(0,156,166);font-family: 'Proxima Nova';" onclick="confirm_uploading()"><i class="far fa-check-circle"></i>&nbsp;Да, загружены все необходимые новости</button></div>
+                    <div class="col"><a class="btn btn-primary" role="button" style="background: #a60a00;font-family: 'Proxima Nova';" href="/"><i class="far fa-times-circle"></i>&nbsp;Нет, это не те новости</a></div>
+                </div>
+                <h1 class="display-4" id="res" style="display: none;font-family: 'Proxima Nova Extrabold';color: rgb(0,156,166);">Вакцина от COVID-19</h1>
+            </div>
+        </div>
+        <div class="card shadow" style="margin-top: 1%;">
+            <div class="card-body" id="news-place" style="overflow-y: auto;overflow-x: hidden;max-height: 900px;">
+                <h6 style="font-family: 'Proxima Nova';">Загруженные новости:</h6>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex d-sm-flex d-xxl-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-xxl-center align-items-xxl-center" id="tags" style="display: none!important;opacity: 0;position: absolute;top: 0;width: 100%;height: 100vh;background: #ffffff;">
+        <div class="row row-cols-xxl-3" id="tags-place" style="border-radius: 30px;margin-left: 2%;margin-right: 2%;"></div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
